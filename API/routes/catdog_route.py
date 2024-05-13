@@ -15,6 +15,8 @@ predictor = Predictor(
     device=ModelConfig.DEVICE
 )
 @router.post("/predict")
+
 async def predict(file_upload: UploadFile = File(...)):
+
     response = await predictor.predict(file_upload.file)
     return CatDogResponse(**response)

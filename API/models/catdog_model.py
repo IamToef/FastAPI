@@ -7,7 +7,7 @@ class CatDogModel(nn.Module):
     def __init__(self, n_classes):
         super(CatDogModel, self).__init__()
 
-        resnet_model = resnet18(weights="IMAGENET1K_V1")
+        resnet_model = resnet18(weights='IMAGENET1K_V1')
         self.backbone = nn.Sequential(*list(resnet_model.children())[:-1])
         for param in self.backbone.parameters():
             param.requires_grad = False

@@ -1,7 +1,7 @@
 import sys
 import torch
 import torchvision
- 
+
 from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 
@@ -24,11 +24,11 @@ class Predictor:
 
     async def predict(self, image):
         pil_img = Image.open(image)
-        if pil_img.mode == "RGBA":
-            pil_img = pil_img.convert("RGB")
+        if pil_img.mode == 'RGBA':
+            pil_img = pil_img.convert('RGB')
 
         transformed_image = self.transforms_(pil_img).unsqueeze(0)
-        output = await self.model_inference(transformed_image) 
+        output = await self.model_inference(transformed_image)
         probs, best_prob, predicted_id, predicted_class = self.output2pred(output)
 
         LOGGER.log_model(self.model_name)
@@ -37,7 +37,7 @@ class Predictor:
         torch.cuda.empty_cache()
 
         resp_dict = {
-            "probs":probs,
+            "probs": probs,
             "best_prob": best_prob,
             "predicted_id": predicted_id,
             "predicted_class": predicted_class,
@@ -49,7 +49,7 @@ class Predictor:
     async def model_inference(self, input):
         input = input.to(self.device)
         with torch.no_grad():
-            output = self.loaded_model(input.to(self.device)).cpu()
+            output = self.loaded_model(input).cpu()
         return output
 
     def load_model(self):
@@ -62,14 +62,16 @@ class Predictor:
             self.loaded_model = model
 
         except Exception as e:
-            LOGGER.log.error(f"Load model failed")
+            LOGGER.log.error("Load model failed")
             LOGGER.log.error(f"Error: {e}")
 
-            return None
+        return None
 
     def create_transform(self):
         self.transforms_ = torchvision.transforms.Compose([
-        torchvision.transforms.Resize((CatDogDataConfig.IMG_SIZE, CatDogDataConfig.IMG_SIZE)), torchvision.transforms.ToTensor(), torchvision.transforms.Normalize(mean=CatDogDataConfig.NORMALIZE_MEAN, std=CatDogDataConfig.NORMALIZE_STD)
+            torchvision.transforms.Resize((CatDogDataConfig.IMG_SIZE, CatDogDataConfig.IMG_SIZE)),
+            torchvision.transforms.ToTensor(),
+            torchvision.transforms.Normalize(mean=CatDogDataConfig.NORMALIZE_MEAN, std=CatDogDataConfig.NORMALIZE_STD)
         ])
 
     def output2pred(self, output):
@@ -77,4 +79,5 @@ class Predictor:
         best_prob = torch.max(probabilities, 1)[0].item()
         predicted_id = torch.max(probabilities, 1)[1].item()
         predicted_class = CatDogDataConfig.ID2DLABEL[predicted_id]
+
         return probabilities.squeeze().tolist(), round(best_prob, 6), predicted_id, predicted_class
