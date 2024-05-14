@@ -5,3 +5,36 @@
 2024-04-03 15:36:27,951 - C:\daihoc\nghiencuukhoahoc\FastAPI\models\catdog_predictor.py - INFO - Starting Model Serving
 2024-04-03 15:52:01,456 - C:\daihoc\nghiencuukhoahoc\FastAPI\models\catdog_predictor.py - INFO - Starting Model Serving
 2024-04-03 15:56:45,708 - C:\daihoc\nghiencuukhoahoc\FastAPI\models\catdog_predictor.py - INFO - Starting Model Serving
+2024-05-14 20:45:24,534 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Starting Model Serving
+2024-05-14 20:46:30,988 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:30,989 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.747444 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:43,358 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:43,359 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:44,612 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:44,613 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:45,022 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:45,022 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:55,634 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:55,635 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:55,772 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:55,772 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:55,927 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:55,927 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:56,354 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:56,354 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:56,499 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:56,500 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:46:56,665 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:46:56,666 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:47:04,042 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:47:04,043 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:47:04,545 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:47:04,545 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:47:04,875 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:47:04,875 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:47:05,370 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:47:05,370 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:47:05,562 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:47:05,562 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-14 20:47:05,686 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
+2024-05-14 20:47:05,687 - C:\odiaDcu\FastAPI\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.981033 - Predicted ID: 1 - Predicted Class: Dog 
