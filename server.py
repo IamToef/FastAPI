@@ -1,4 +1,6 @@
+import socket
 import uvicorn
 
 if __name__=="__main__":
-    uvicorn.run("app:app", host="10.7.151.204", port=8000, reload=True)
+    host = socket.gethostbyname(socket.gethostname())
+    uvicorn.run("app:app", host=host, port=8000, reload=True)

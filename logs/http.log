@@ -29,3 +29,9 @@
 2024-05-13 14:00:32,375 - C:\odiaDcu\baihoc\NCKH\FastAPI\middleware\http.py - INFO - 10.7.151.204 - "POST /catdog_classification/predict 1.1" 200 0.01s
 2024-05-13 14:00:32,652 - C:\odiaDcu\baihoc\NCKH\FastAPI\middleware\http.py - INFO - 10.7.151.204 - "POST /catdog_classification/predict 1.1" 200 0.01s
 2024-05-13 14:01:17,882 - C:\odiaDcu\baihoc\NCKH\FastAPI\middleware\http.py - INFO - 10.7.151.204 - "POST /catdog_classification/predict 1.1" 200 0.01s
+2024-05-13 19:10:50,924 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET / 1.1" 404 0.00s
+2024-05-13 19:10:51,287 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /favicon.ico 1.1" 404 0.00s
+2024-05-13 19:10:53,970 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /doc 1.1" 404 0.00s
+2024-05-13 19:10:58,877 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /doc 1.1" 404 0.00s
+2024-05-13 19:11:17,684 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /docs 1.1" 200 0.00s
+2024-05-13 19:11:18,089 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /openapi.json 1.1" 200 0.01s

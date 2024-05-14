@@ -43,3 +43,5 @@
 2024-05-13 14:00:32,651 - C:\odiaDcu\baihoc\NCKH\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.953342 - Predicted ID: 1 - Predicted Class: Dog 
 2024-05-13 14:01:17,880 - C:\odiaDcu\baihoc\NCKH\FastAPI\models\catdog_predictor.py - INFO - Predictor name: resnet18
 2024-05-13 14:01:17,880 - C:\odiaDcu\baihoc\NCKH\FastAPI\models\catdog_predictor.py - INFO - Predicted Prob: 0.953342 - Predicted ID: 1 - Predicted Class: Dog 
+2024-05-13 19:10:47,517 - C:\odiaDcu\FastAPI\models\catdog_predictor.py - INFO - Starting Model Serving
+2024-05-13 19:26:38,746 - C:\odiaDcu\FastAPI\models\catdog_predictor.py - INFO - Starting Model Serving
