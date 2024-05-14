@@ -3,3 +3,5 @@
 2024-04-03 15:36:40,307 - C:\daihoc\nghiencuukhoahoc\FastAPI\middleware\http.py - INFO - 192.168.1.8 - "GET /favicon.ico 1.1" 404 0.00s
 2024-04-03 15:58:46,805 - C:\daihoc\nghiencuukhoahoc\FastAPI\middleware\http.py - INFO - 192.168.1.8 - "GET / 1.1" 404 0.00s
 2024-04-03 15:58:46,838 - C:\daihoc\nghiencuukhoahoc\FastAPI\middleware\http.py - INFO - 192.168.1.8 - "GET /favicon.ico 1.1" 404 0.00s
+2024-05-14 20:38:29,733 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /docs 1.1" 200 0.00s
+2024-05-14 20:38:30,123 - C:\odiaDcu\FastAPI\middleware\http.py - INFO - 192.168.1.19 - "GET /openapi.json 1.1" 200 0.01s
