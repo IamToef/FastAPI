@@ -1,39 +1,41 @@
 from ultralytics import YOLO
 import facenet
-import tracker
 
 # Load YOLOv8 model
-yolo_model = YOLO('yolov8-custom.pt')
+model = YOLO('path/to/your/custom-yolov8-model.pt')
 
-# Load FaceNet model
-facenet_model = facenet.load_model('facenet-model.h5')
+# Load FaceNet model (or any other face recognition model)
+face_recognition_model = facenet.load_model('path/to/facenet/model')
 
-# Initialize tracker
-person_tracker = tracker.initialize()
+# Initialize tracker and face recognition cache
+tracker = SomeTracker()
+face_cache = {}
 
 # Process video frames
-for frame in video_stream:
+for frame in video_frames:
     # Detect objects with YOLOv8
-    detections = yolo_model.predict(frame)
+    results = model(frame)
+    
+    # Update tracker with detections
+    tracker.update(results.boxes.xyxy)
 
-    # Track persons
-    tracks = person_tracker.update(detections)
+    # Loop through detections
+    for i, (x1, y1, x2, y2, conf, cls) in enumerate(results.boxes.xyxy):
+        if cls == person_class_id:  # Check if the class is a person
+            track_id = tracker.get_id(i)  # Get tracking ID for the detection
+            
+            # Check if we need to run face recognition
+            if track_id not in face_cache or tracker.needs_update(track_id):
+                # Crop face region and run face recognition
+                face = frame[y1:y2, x1:x2]
+                name = face_recognition_model.recognize(face)
+                
+                # Update face cache
+                face_cache[track_id] = name
+            
+            # Get name from cache and draw it on the frame
+            name = face_cache[track_id]
+            frame = draw_name_on_frame(frame, name, (x1, y1, x2, y2))
 
-    # For each person detected
-    for track in tracks:
-        if track.is_person and track.face_visible:
-            # Crop face ROI
-            face_roi = crop_face(frame, track.bbox)
-
-            # Recognize face
-            name, confidence = facenet_model.recognize(face_roi)
-
-            # If recognition confidence is high, label the track
-            if confidence > threshold:
-                track.label = name
-
-    # Draw bounding boxes and labels on the frame
-    annotated_frame = draw_annotations(frame, tracks)
-
-    # Display or save the annotated frame
-    display(annotated_frame)
+    # Display or save the frame
+    display_or_save_frame(frame)
